@@ -1,0 +1,55 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/h3-base-styles";
+
+.get-in-touch {
+  &__description {
+    text-align: right;
+
+    dt {
+      margin-top: 20px;
+      font-family: $font-header;
+      color: #fff;
+    }
+
+    dd {
+      margin-bottom: 40px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__social-icon {
+    width: 30px;
+    margin-left: 15px;
+  }
+
+  &__image {
+    @media only screen and (max-width: 1300px) {
+      height: 400px;
+      width: 400px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      height: 300px;
+      width: 300px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    &__email {
+      font-size: 0.9em;
+    }
+  }
+}

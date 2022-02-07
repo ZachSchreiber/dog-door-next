@@ -1,0 +1,66 @@
+@keyframes drawer-animation {
+  from {
+    transform: translate(100%, 0);
+  }
+
+  to {
+    transform: translate(0, 0);
+    visibility: visible;
+  }
+}
+
+@keyframes overlay-animation {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.drawer-overlay {
+  position: fixed;
+  z-index: 9001;
+  height: 100%;
+  right: 0;
+  background: rgba($color: #000000, $alpha: 0.8);
+  width: 0%;
+  &--open {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    top: 60px;
+  }
+}
+
+.drawer {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9004;
+  inline-size: rem(300);
+  background: #fff;
+  visibility: hidden;
+  transition: scale, fade;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--open {
+    transform: translate(0, 0);
+    visibility: visible;
+    width: 400px;
+
+    animation: drawer-animation 0.3s;
+
+    @media only screen and (max-width: 600px) {
+      width: 300px;
+    }
+  }
+}

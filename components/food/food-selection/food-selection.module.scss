@@ -1,0 +1,133 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/h3-base-styles";
+
+.food-selection {
+  margin-top: 20px;
+  padding: 50px 140px;
+  background: linear-gradient(200deg, $tan-900 45%, $blue-900 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--show {
+    animation: about-show-animation 0.5s;
+    opacity: 1;
+    transform: translateY(rem(0));
+  }
+
+  &--hide {
+    animation: about-hide-animation 0.5s;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  @keyframes about-show-animation {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(rem(0));
+    }
+  }
+
+  @keyframes about-hide-animation {
+    from {
+      opacity: 1;
+      transform: translateY(rem(0));
+    }
+
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  &__title {
+    @include h3-base-styles;
+    width: 30%;
+    font-family: $font-header;
+    color: $blue-900;
+    background-color: #fff;
+  }
+
+  &__pig-image {
+    transform: scale(0.9, 0.9);
+  }
+
+  &__bull-image {
+    transform: scale(0.9, 0.9);
+  }
+
+  &__beet-image {
+    padding-left: 30px;
+    transform: scale(1.5, 1.5);
+  }
+
+  &__chicken-image {
+    padding-left: 30px;
+  }
+
+  &__article-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__article-container > * {
+    margin-bottom: 40px;
+  }
+
+  &__image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  &__article-title {
+    font-size: 1.5em;
+  }
+
+  &__article-content {
+    font-size: 1em;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    &__title {
+      font-size: 2em;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    &__article-container {
+      flex-direction: column;
+    }
+
+    &__title {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 5px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
+
+    &__title {
+      font-size: 1.2em;
+    }
+  }
+}
