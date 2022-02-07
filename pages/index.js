@@ -60,9 +60,10 @@ class Home extends Component {
               </span>
             <img className={cn(styles.paw,  styles.slam)}  src="/paw-logo-white-perfect.svg"     
              alt="dog door logo" />
-     
           </div>
-          <h1 className={styles.orderOnline}>
+        </div>
+        <div className={styles.orderOnlineSection}>
+        <h1 className={styles.orderOnlineSection__link}>
             <Link href="https://dog-door-pet-food.square.site/">
             <a target="_blank">Order Online</a>
             </Link>
