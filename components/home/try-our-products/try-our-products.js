@@ -1,9 +1,6 @@
 import Link from "next/link";
 import cn from "classnames";
 import Article from "../../article";
-import bluePaw from "../../assets/paw-logo-blue-perfect.svg";
-import beerBottle from "../../assets/beer-bottle-perfect.svg";
-import dogBowl from "../../assets/dog-bowl-perfect.svg";
 
 import styles from "./try-our-products.module.scss";
 
@@ -28,6 +25,7 @@ const TryOurProducts = () => {
         <Link href={"/dog-brews"}>
           <a className={styles[`${block}__link`]}>
           <Article
+            customStyles={{ content: styles[`${block}__article-content`] }}
             image="/beer-bottle-perfect.svg"
             title={"DOG BREWS"}
             content={

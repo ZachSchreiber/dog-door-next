@@ -76,16 +76,16 @@ const DrawerHeader = ({ showHeader }) => {
               styles[`links__item${pathname === "/order-online" ? "--active" : ""}`]
             )}><span className={styles.links__text}>LOCAL SUPPLIERS</span></a>
           </Link>
-          {/* <Link
+          <Link
             className={cn(
               styles[`links__item${pathname === "/order-online" ? "--active" : ""}`]
             )}
-            href={"/order-online"}
+            href="https://dog-door-pet-food.square.site/"
           >
-           <a   className={cn(
+           <a  target="_blank"  className={cn(
               styles[`links__item${pathname === "/order-online" ? "--active" : ""}`]
             )}><span className={styles.links__text}>ORDER ONLINE</span></a>
-          </Link> */}
+          </Link>
         </section>
       </Drawer>
       <button className={styles.menu} onClick={onToggle}>

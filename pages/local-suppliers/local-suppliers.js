@@ -50,7 +50,7 @@ const LocalSuppliers = () => {
               />
             </div>
             <h3 className={styles[`${block}__article--title`]}>
-              FIRST HAND FOODS
+              FIRSTHAND FOODS
             </h3>
             <p className={styles[`${block}__article--content`]}>
             Firsthand Foods is a women-owned food hub that sells local meats from North Carolina farms.
@@ -100,7 +100,7 @@ const LocalSuppliers = () => {
               />
             </div>
             <h3 className={styles[`${block}__article--title`]}>
-              CAROLINNA PASTURES
+              CAROLINA PASTURES
             </h3>
             <p className={styles[`${block}__article--content`]}>
             Pasture raised meat: &ldquo;beyond organic and sustainable (regenerative) standards using no chemicals, antibiotics or GMO’s...&ldquo;

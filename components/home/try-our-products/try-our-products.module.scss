@@ -59,7 +59,9 @@
     color: $blue-900;
 
     &:hover {
-      text-decoration: underline;
+      &__article-content {
+        text-decoration: dashed;
+      }
     }
   }
 
