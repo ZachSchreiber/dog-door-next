@@ -38,7 +38,7 @@ const LocalSuppliers = () => {
               LITTLE WAY FARM
             </h3>
             <p className={styles[`${block}__article--content`]}>
-            Michelle and Joe provide for us pasture raised and rotationally grazed meat.
+            Michelle and Joe provide pasture raised and rotationally grazed meat.
             </p>
           </div>
           <div className={cn(styles[`${block}__article`])}>

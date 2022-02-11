@@ -7,6 +7,7 @@ import TryOurProducts from "../components/home/try-our-products";
 import WhereToPurchase from "../components/home/where-to-purchase";
 import GetInTouch from "../components/home/get-in-touch";
 import HtmlHead from "../components/html-head";
+import ShopTab from "../components/shop-tab/shop-tab";
 
 import styles from "./home.module.scss";
 
@@ -17,7 +18,7 @@ class Home extends Component {
   }
 
   state = {
-    showHeader: ""
+    showHeader: "",
   };
 
   handleScroll = () => {
@@ -47,7 +48,8 @@ class Home extends Component {
 
   render() {
     return (
-      <>
+      <div className={styles.container}>
+       <ShopTab />
       <HtmlHead pageTitle="Dog Door" content="Dog Door Pet Food is Durham's premier Farm-To-Fido pet food company. We offer pet food, dog brews, and other products made with simple, locally sourced ingredients."/> 
         <DrawerHeader showHeader={this.state.showHeader} />
         <div className={styles.main} ref={node => this.mainRef = node}>
@@ -73,7 +75,7 @@ class Home extends Component {
         <TryOurProducts />
         <WhereToPurchase />
         <GetInTouch />
-      </>
+      </ div>
     );
   }
 }

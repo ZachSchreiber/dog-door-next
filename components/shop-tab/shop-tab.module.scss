@@ -1,0 +1,115 @@
+@import "../../styles/variables.scss";
+
+.shopTab {
+  z-index: 8000;
+  font-family: $font-header;
+  font-size: 1.4em;
+  position: fixed;
+  bottom: 40px;
+  right: -165px;
+  display: flex;
+  flex-direction: row;
+  transition: 0.3s ease;
+
+  &--open {
+    right: 0;
+  }
+
+  &__openTab {
+    color: $blue-900;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px 25px;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: $blue-900;
+      cursor: pointer;
+    }
+  }
+
+  &__button {
+    background-color: $tan-900;
+    border: 2px solid #fff;
+    border-left: transparent;
+    padding: 10px 10px 10px 20px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      a {
+        -webkit-animation-name: wiggle;
+        -ms-animation-name: wiggle;
+        -ms-animation-duration: 1000ms;
+        -webkit-animation-duration: 1000ms;
+        -webkit-animation-iteration-count: 1;
+        -ms-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-in-out;
+        -ms-animation-timing-function: ease-in-out;
+      }
+    }
+
+    @-webkit-keyframes wiggle {
+      0% {
+        -webkit-transform: rotate(10deg);
+      }
+      25% {
+        -webkit-transform: rotate(-10deg);
+      }
+      50% {
+        -webkit-transform: rotate(20deg);
+      }
+      75% {
+        -webkit-transform: rotate(-5deg);
+      }
+      100% {
+        -webkit-transform: rotate(0deg);
+      }
+    }
+
+    @-ms-keyframes wiggle {
+      0% {
+        -ms-transform: rotate(1deg);
+      }
+      25% {
+        -ms-transform: rotate(-1deg);
+      }
+      50% {
+        -ms-transform: rotate(1.5deg);
+      }
+      75% {
+        -ms-transform: rotate(-5deg);
+      }
+      100% {
+        -ms-transform: rotate(0deg);
+      }
+    }
+
+    @keyframes wiggle {
+      0% {
+        transform: rotate(10deg);
+      }
+      25% {
+        transform: rotate(-10deg);
+      }
+      50% {
+        transform: rotate(20deg);
+      }
+      75% {
+        transform: rotate(-5deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

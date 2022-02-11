@@ -4,12 +4,14 @@ import BrewsOverview from "../../components/dog-brews/brews-overview";
 import BarkticPorter from "../../components/dog-brews/barktic-porter";
 import CarlolinaChillsner from "../../components/dog-brews/carolina-chillsner";
 import MaltLicker from "../../components/dog-brews/malt-licker";
+import ShopTab from "../../components/shop-tab/shop-tab";
 
 import styles from "./dog-brews.module.scss";
 
 const DogBrews = () => {
   return (
     <div className={styles[`dog-brews`]}>
+      <ShopTab />
       <HtmlHead
         pageTitle="Dog Brews"
         content="Dog Door Pet Food offers several NONALCOHOLIC brews formulated
