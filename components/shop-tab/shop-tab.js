@@ -18,7 +18,7 @@ const ShopTab = () => {
       onClick={toggleTab}
       className={cn(styles.shopTab, isTabOpen && styles["shopTab--open"])}
     >
-      <div className={styles.shopTab__openTab}>
+      <div className={cn(styles.shopTab__openTab, isTabOpen && styles["shopTab__openTab--open"])}>
         <FontAwesomeIcon icon={faShoppingBag} />
       </div>
       <div className={styles.shopTab__button}>

@@ -6,7 +6,7 @@
   font-size: 1.4em;
   position: fixed;
   bottom: 40px;
-  right: -165px;
+  right: -167px;
   display: flex;
   flex-direction: row;
   transition: 0.3s ease;
@@ -16,13 +16,17 @@
   }
 
   &__openTab {
-    color: $blue-900;
-    background-color: #fff;
+    color: #fff;
     border: 2px solid #fff;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 10px 25px;
     transition: 0.3s ease;
+
+    &--open {
+      color: #fff;
+      background-color: $blue-900;
+    }
 
     &:hover {
       color: #fff;
