@@ -13,6 +13,19 @@
 
   &--open {
     right: 0;
+
+    .shopTab__button {
+      a {
+        -webkit-animation-name: wiggle;
+        -ms-animation-name: wiggle;
+        -ms-animation-duration: 1000ms;
+        -webkit-animation-duration: 1000ms;
+        -webkit-animation-iteration-count: 1;
+        -ms-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-in-out;
+        -ms-animation-timing-function: ease-in-out;
+      }
+    }
   }
 
   &__openTab {
