@@ -11,7 +11,7 @@ const MaltLicker = () => {
 
   return (
        <StandardContainer
-       title={"MALT LICKER"}
+       title={"LOWRIDER MALT LICKER"}
        image="/malt-licker.svg"
        imageClassName={styles[`${block}__image`]}
      >

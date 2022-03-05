@@ -97,6 +97,17 @@
     }
   }
 
+  @media only screen and (max-width: 1300px) {
+    margin-top: 0;
+    .logoBase {
+      transform: scale(2.5, 2.5);
+    }
+
+    .paw {
+      transform: scale(2.5, 2.5);
+    }
+  }
+
   @media only screen and (max-width: 900px) {
     margin-top: 0;
     .logoBase {
@@ -130,7 +141,7 @@
       padding: 10px 40px 12px 40px;
       font-family: $font-header;
       color: #fff;
-      font-size: 3em;
+      font-size: 2em;
       text-decoration: none;
       border-radius: 5px;
       border: 4px solid #fff;
@@ -143,9 +154,10 @@
       }
     }
   }
+
   @media only screen and (max-width: 900px) {
     a {
-      font-size: 2em;
+      font-size: 1.5em;
     }
   }
 
